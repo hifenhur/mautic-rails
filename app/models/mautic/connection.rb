@@ -64,6 +64,7 @@ module Mautic
     end
 
     def parse_response(response)
+      debugger
       case response.status
       when 400
         raise Mautic::ValidationError.new(response)
